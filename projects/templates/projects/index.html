@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="{% static 'css/Article-List.css' %}">
     <link rel="stylesheet" href="{% static 'css/Header-Blue.css' %}">
     <link rel="stylesheet" href="{% static 'css/Header-Dark.css' %}">
-
     <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
 
 
     <!-- JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
     <script src="{% static 'js/scripts.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
@@ -47,7 +48,8 @@
 
             <div class="col-lg-4 collapse navbar-collapse show" id="navbarSupportedContent">
                 <button class="search-icon" onclick="menuToggle(this, event);">
-                    <i class="fas fa-search"></i>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
 
@@ -196,7 +198,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer-dark">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3 item">
