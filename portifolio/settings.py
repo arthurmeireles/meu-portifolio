@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'portifolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('DB_NAME', 'meuportifolio'),
+        'USER': os.environ.get('DB_USER', 'arthurmeireles'),
+        'PASSWORD': os.environ.get('DB_PASS', 'batata'),
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -119,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = '/public/'

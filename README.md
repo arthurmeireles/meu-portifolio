@@ -1,5 +1,18 @@
 # meu-portifolio
 
+
+
+#### Para criar um banco psql utilize o comando:
+
+```shell
+psql
+```
+
+```shell
+create database nomedobanco;
+```
+
+
 #### Para rodar o projeto utilize o comando abaixo:
 ```shell
 python manage.py runserver
@@ -21,5 +34,12 @@ python manage.py runserver
 ```html
 <script src="{% static 'js/scripts.js' %}"></script>
 ```
+
+### Para criar um model, deve ser seguido o padrão abaixo. Esse trecho deve se colocado no arquivo models.py.
+
+```
+
+```
+
 
 
