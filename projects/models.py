@@ -11,5 +11,8 @@ class Projeto(models.Model):
     descricao = models.CharField(max_length= 255)
     link = models.CharField(max_length= 255)
     arquivo = models.ImageField()
+
+    def __str__(self):
+        return self.titulo
     
      
